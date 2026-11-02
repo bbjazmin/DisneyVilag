@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Világ</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="fejlec">
+        <div class="logo">✨ Disney Világ</div>
+        <nav>
+            <a href="#kezdolap">Kezdőlap</a>
+            <a href="#mesek">Mesék</a>
+            <a href="#teszt">Személyiségteszt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="kezdolap">
+            <div class="hero-szoveg">
+                <p class="kis-felirat">Egy csipetnyi varázslat mindenkinek</p>
+                <h1>Lépj be a <span>Disney mesék</span> világába!</h1>
+                <p>Fedezd fel a kedvenc történeteidet, majd töltsd ki a tesztet, és tudd meg, melyik Disney-karakterre hasonlít a személyiséged!</p>
+                <a class="fo-gomb" href="#mesek">Mesék felfedezése</a>
+            </div>
+            <div class="csillag">✦</div>
+        </section>
+
+        <section class="szekcio" id="mesek">
+            <div class="szekcio-cim">
+                <p class="kis-felirat">Varázslatos történetek</p>
+                <h2>Ismerd meg a meséket!</h2>
+                <p>Néhány felejthetetlen történet, amelyekben a bátorság, a barátság és a szeretet kap főszerepet.</p>
+            </div>
+
+            <div class="mese-racs">
+                <article class="mese-kartya">
+                    <div class="mese-ikon jeg">❄️</div>
+                    <div class="kartya-tartalom">
+                        <h3>Jégvarázs</h3>
+                        <p>Anna és Elsa története a testvéri szeretetről, az elfogadásról és az önmagunkra találásról szól.</p>
+                        <span class="cimke">Varázslat • Család</span>
+                    </div>
+                </article>
+
+                <article class="mese-kartya">
+                    <div class="mese-ikon arany">🌸</div>
+                    <div class="kartya-tartalom">
+                        <h3>Aranyhaj</h3>
+                        <p>Aranyhaj hosszú kalandra indul, hogy felfedezze a világot és megtalálja a saját útját.</p>
+                        <span class="cimke">Kaland • Bátorság</span>
+                    </div>
+                </article>
+
+                <article class="mese-kartya">
+                    <div class="mese-ikon vaiana">🌊</div>
+                    <div class="kartya-tartalom">
+                        <h3>Vaiana</h3>
+                        <p>Vaiana a tengeren át indul útnak, hogy segítsen népén és bebizonyítsa, mire képes.</p>
+                        <span class="cimke">Kaland • Kitartás</span>
+                    </div>
+                </article>
+
+                <article class="mese-kartya">
+                    <div class="mese-ikon belle">🌹</div>
+                    <div class="kartya-tartalom">
+                        <h3>A szépség és a szörnyeteg</h3>
+                        <p> Belle története arra tanít, hogy az igazi értékeket nem a külső alapján ismerjük fel.</p>
+                        <span class="cimke">Szeretet • Jóság</span>
+                    </div>
+                </article>
+
+                <article class="mese-kartya">
+                    <div class="mese-ikon simba">🦁</div>
+                    <div class="kartya-tartalom">
+                        <h3>Az oroszlánkirály</h3>
+                        <p Simba megtanulja, mit jelent a felelősség, a család és a saját út vállalása.</p>
+                        <span class="cimke">Család • Felelősség</span>
+                    </div>
+                </article>
+
+                <article class="mese-kartya">
+                    <div class="mese-ikon lilo">🌺</div>
+                    <div class="kartya-tartalom">
+                        <h3>Lilo és Stitch</h3>
+                        <p>Lilo és Stitch különleges barátsága megmutatja, hogy a családot a szeretet tartja össze.</p>
+                        <span class="cimke">Barátság • Család</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="teszt-szekcio" id="teszt">
+            <div class="szekcio-cim">
+                <p class="kis-felirat">Találd meg a benned élő hőst!</p>
+                <h2>Melyik Disney-karakter lennél?</h2>
+                <p>Válaszolj az öt kérdésre, és nézd meg, melyik karakter személyisége áll hozzád a legközelebb!</p>
+            </div>
+
+            <form id="szemelyisegTeszt" class="teszt-doboz">
+                <fieldset class="kerdes">
+                    <legend>1. Hogyan töltöd legszívesebben a szabadidődet?</legend>
+                    <label><input type="radio" name="q1" value="elsa" required> Inkább egyedül pihenek és feltöltődöm.</label>
+                    <label><input type="radio" name="q1" value="aranyhaj"> Valami kreatív dolgot készítek.</label>
+                    <label><input type="radio" name="q1" value="vaiana"> Elindulok és új élményeket keresek.</label>
+                    <label><input type="radio" name="q1" value="belle"> Olvasok vagy új dolgokat tanulok.</label>
+                </fieldset>
+
+                <fieldset class="kerdes">
+                    <legend>2. Mit teszel, ha nehéz helyzetbe kerülsz?</legend>
+                    <label><input type="radio" name="q2" value="elsa" required> Próbálok nyugodt maradni és átgondolni.</label>
+                    <label><input type="radio" name="q2" value="aranyhaj"> Pozitívan állok hozzá, és keresem a megoldást.</label>
+                    <label><input type="radio" name="q2" value="vaiana"> Bátran szembenézek vele.</label>
+                    <label><input type="radio" name="q2" value="belle"> Először megpróbálom megérteni a helyzetet.</label>
+                </fieldset>
+
+                <fieldset class="kerdes">
+                    <legend>3. Melyik tulajdonság jellemző rád leginkább?</legend>
+                    <label><input type="radio" name="q3" value="elsa" required> Önálló és határozott vagyok.</label>
+                    <label><input type="radio" name="q3" value="aranyhaj"> Vidám és kreatív vagyok.</label>
+                    <label><input type="radio" name="q3" value="vaiana"> Bátor és kitartó vagyok.</label>
+                    <label><input type="radio" name="q3" value="belle"> Kedves és kíváncsi vagyok.</label>
+                </fieldset>
+
+                <fieldset class="kerdes">
+                    <legend>4. Milyen helyre utaznál el legszívesebben?</legend>
+                    <label><input type="radio" name="q4" value="elsa" required> Egy havas, nyugodt hegyi kastélyba.</label>
+                    <label><input type="radio" name="q4" value="aranyhaj"> Egy színes, mesebeli városba.</label>
+                    <label><input type="radio" name="q4" value="vaiana"> Egy trópusi szigetre, az óceán mellé.</label>
+                    <label><input type="radio" name="q4" value="belle"> Egy hatalmas, régi könyvtárba.</label>
+                </fieldset>
+
+                <fieldset class="kerdes">
+                    <legend>5. Mi a legfontosabb számodra?</legend>
+                    <label><input type="radio" name="q5" value="elsa" required> Hogy önmagam lehessek.</label>
+                    <label><input type="radio" name="q5" value="aranyhaj"> Hogy örömet szerezzek másoknak.</label>
+                    <label><input type="radio" name="q5" value="vaiana"> Hogy elérjem a céljaimat.</label>
+                    <label><input type="radio" name="q5" value="belle"> Hogy a szeretteim mellett lehessek.</label>
+                </fieldset>
+
+                <button type="submit" class="fo-gomb">Eredmény megtekintése</button>
+                <button type="reset" class="masodlagos-gomb">Újrakezdem</button>
+                <div id="eredmeny" class="eredmeny" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>✨ Disney Világ – Egy hely, ahol a mesék életre kelnek.</p>
+        <p class="lablec-apro">Iskolai projekt • HTML, CSS és JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
