@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbf8ff;
+    color: #30243d;
+    line-height: 1.6;
+}
+
+.fejlec {
+    min-height: 75px;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 3px 15px rgba(55, 30, 80, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #7545a5;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #49345d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #bd72c9;
+}
+
+.hero {
+    min-height: 440px;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(120deg, #e9dcff, #fce4f4, #e2f0ff);
+}
+
+.hero-szoveg {
+    max-width: 650px;
+    position: relative;
+    z-index: 1;
+}
+
+.kis-felirat {
+    color: #9a5ab0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.15;
+    margin: 15px 0;
+}
+
+h1 span {
+    color: #8856b7;
+}
+
+.hero-szoveg > p:not(.kis-felirat) {
+    max-width: 570px;
+    margin-bottom: 28px;
+    color: #574b62;
+    font-size: 17px;
+}
+
+.fo-gomb,
+.masodlagos-gomb {
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    padding: 13px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.fo-gomb {
+    color: white;
+    background: linear-gradient(100deg, #8656b5, #c16eb7);
+    box-shadow: 0 5px 14px rgba(134, 86, 181, 0.25);
+}
+
+.fo-gomb:hover,
+.masodlagos-gomb:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(90, 55, 120, 0.2);
+}
+
+.masodlagos-gomb {
+    color: #7545a5;
+    background-color: #f0e5fa;
+    margin-left: 8px;
+}
+
+.csillag {
+    position: absolute;
+    right: 13%;
+    top: 18%;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 190px;
+    text-shadow: 0 0 35px #c28bd5;
+}
+
+.szekcio {
+    padding: 75px 8%;
+}
+
+.szekcio-cim {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 38px;
+}
+
+.szekcio-cim h2 {
+    color: #53366e;
+    font-size: 34px;
+    margin: 8px 0;
+}
+
+.szekcio-cim > p:last-child {
+    color: #71667a;
+}
+
+.mese-racs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.mese-kartya {
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(64, 38, 85, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mese-kartya:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(64, 38, 85, 0.14);
+}
+
+.mese-ikon {
+    height: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+}
+
+.jeg { background: linear-gradient(135deg, #d7f1ff, #a8c8f5); }
+.arany { background: linear-gradient(135deg, #ffe6b8, #f4b5cf); }
+.vaiana { background: linear-gradient(135deg, #b9f0e8, #80c9d9); }
+.belle { background: linear-gradient(135deg, #ffe5a8, #eaa9b8); }
+.simba { background: linear-gradient(135deg, #ffdfa0, #d99565); }
+.lilo { background: linear-gradient(135deg, #ffc9d9, #a9e4d5); }
+
+.kartya-tartalom {
+    padding: 22px;
+}
+
+.kartya-tartalom h3 {
+    color: #67458a;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.kartya-tartalom p {
+    color: #71667a;
+    font-size: 14px;
+    min-height: 68px;
+}
+
+.cimke {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background-color: #f2e9fa;
+    color: #8052a0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.teszt-szekcio {
+    padding: 75px 8%;
+    background: linear-gradient(135deg, #f0e8ff, #fcecf6);
+}
+
+.teszt-doboz {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(64, 38, 85, 0.09);
+}
+
+.kerdes {
+    border: 1px solid #eadff3;
+    border-radius: 13px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.kerdes legend {
+    padding: 0 8px;
+    color: #624080;
+    font-weight: bold;
+}
+
+.kerdes label {
+    display: block;
+    padding: 7px 4px;
+    color: #574b62;
+    cursor: pointer;
+}
+
+.kerdes input {
+    margin-right: 8px;
+    accent-color: #9561bd;
+}
+
+.eredmeny {
+    display: none;
+    margin-top: 25px;
+    padding: 22px;
+    border-radius: 14px;
+    background-color: #f5edfc;
+    text-align: center;
+}
+
+.eredmeny.aktiv {
+    display: block;
+}
+
+.eredmeny h3 {
+    color: #7545a5;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+footer {
+    padding: 28px 15px;
+    text-align: center;
+    color: white;
+    background-color: #49345d;
+}
+
+.lablec-apro {
+    margin-top: 5px;
+    font-size: 12px;
+    opacity: 0.75;
+}
+
+@media (max-width: 850px) {
+    .mese-racs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fejlec {
+        padding: 15px 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .fejlec {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 65px 7%;
+    }
+
+    .csillag {
+        right: -35px;
+        font-size: 120px;
+    }
+
+    .mese-racs {
+        grid-template-columns: 1fr;
+    }
+
+    .szekcio,
+    .teszt-szekcio {
+        padding: 55px 6%;
+    }
+
+    .teszt-doboz {
+        padding: 20px;
+    }
+
+    .masodlagos-gomb {
+        margin: 10px 0 0;
+    }
+}
